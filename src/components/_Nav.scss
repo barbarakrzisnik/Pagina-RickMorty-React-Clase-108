@@ -1,0 +1,19 @@
+nav {
+    background-color: #1C282E;
+    color: #A1AFBA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    h1 {
+        font-size: 40px;
+        margin: 20px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin: 20px;
+        }
+    }
+}

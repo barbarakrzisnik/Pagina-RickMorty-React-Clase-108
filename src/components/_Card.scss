@@ -1,0 +1,40 @@
+.tarjeta {
+    background-color: #A1AFBA;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    h2 {
+        text-align: center;
+    }
+    .texto {
+        background-color: #1C282E;
+        color: white;
+        padding: 5px;
+        margin-top: 5px;
+        h4 {
+            margin: 5px;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+        }
+        
+    }
+
+}
+
+
+.status-red {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 4px;
+
+}
+
+.status-green {
+    background-color: green;
+    height: 10px;
+    width: 10px;
+    border-radius: 4px;
+}

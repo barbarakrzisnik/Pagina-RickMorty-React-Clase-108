@@ -1,19 +1,29 @@
-// https://rickandmortyapi.com/api/character
-import "./App.scss"
-import Nav from "./components/Nav"
-import SeccionPrincipal from "./components/SeccionPrincipal"
-import Footer from "./components/Footer"
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import Nav from "./components/Nav";
+import Personajes from "./components/Personajes";
+import Ubicaciones from "./components/Ubicaciones";
+import Episodios from "./components/Episodios";
+import Footer from "./components/Footer";
+import DetallesPersonajes from "./components/DetallesPersonajes"
 
 const App = () => {
   return (
     <div>
-      <Nav/>
-      <SeccionPrincipal/>
-      <Footer/>
-
+      <BrowserRouter>
+    <Nav />
+      <Routes>
+        <Route path="/personajes" element={<Personajes />} />
+        <Route path="/episodios" element={<Episodios />} />
+        <Route path="/ubicaciones" element={<Ubicaciones />} />
+        <Route path="/personajes/:idPersonaje" element={<DetallesPersonajes />} />
+      </Routes>
+    </BrowserRouter>
+      <Footer />
     </div>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;
+
+

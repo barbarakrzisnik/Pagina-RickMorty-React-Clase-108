@@ -1,8 +1,11 @@
+import {Link} from "react-router-dom"
+
 const Card = ({
   nameCharacter,
   imgCharacter,
   statusCharacter,
   speciesCharacter,
+  idCharacter
 }) => {
 
   return (
@@ -18,7 +21,7 @@ const Card = ({
         <div className="status">
         <h4> Status: {statusCharacter}</h4> <div className={statusCharacter === "Alive" ? "status-green" : "status-red"}></div>
         </div>
-        
+        <Link className="link" to={`/personajes/${idCharacter}`}>Ir a detalle</Link>
       </div>
     </div>
   );

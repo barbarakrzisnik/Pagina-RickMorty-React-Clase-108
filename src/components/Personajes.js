@@ -1,7 +1,8 @@
 import Card from "./Card.js";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"
 
-const SeccionPrincipal = () => {
+const Personajes = () => {
   const [personajes, setPersonajes] = useState([]);
   const [busqueda, setBusqueda] = useState([]);
 
@@ -33,6 +34,7 @@ const SeccionPrincipal = () => {
             nameCharacter={personaje.name}
             statusCharacter={personaje.status}
             speciesCharacter={personaje.species}
+            idCharacter={personaje.id}
           />
         ))}
       </div>
@@ -40,4 +42,4 @@ const SeccionPrincipal = () => {
   );
 };
 
-export default SeccionPrincipal;
+export default Personajes;

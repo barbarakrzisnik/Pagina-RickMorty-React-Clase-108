@@ -11,16 +11,22 @@
         color: white;
         padding: 5px;
         margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h4 {
             margin: 5px;
         }
         .status {
             display: flex;
             align-items: center;
-        }
-        
+        }   
     }
-
+    .link {
+        color: white;
+        text-align: right;
+        margin: 10px;
+    }
 }
 
 

@@ -15,14 +15,14 @@ const [personaje, setPersonajes] = useState([]);
            console.log(params.idPersonaje) 
           setPersonajes(data);
         });
-    }, []);
+    }, [params.idPersonaje]);
 
     console.log(personaje)
 
   return (
     <div className="contenedorTarjetaDetalle">
       <div className="tarjetaDetalle">
-      <img src={personaje.image}></img>
+      <img src={personaje.image} alt="imagen-personaje"></img>
         <div className="texto">
           <h1>{personaje.name}</h1>
           <h3>Gender: {personaje.gender}</h3>

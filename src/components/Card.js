@@ -12,7 +12,7 @@ const Card = ({
     <div className="tarjeta">
       <div className="imagen">
         {" "}
-        <img src={imgCharacter}></img>
+        <img src={imgCharacter} alt="imagen-personaje"></img>
       </div>
       <div className="texto">
         <h2 className="nombre">{nameCharacter}</h2>

@@ -5,7 +5,8 @@ import Personajes from "./components/Personajes";
 import Ubicaciones from "./components/Ubicaciones";
 import Episodios from "./components/Episodios";
 import Footer from "./components/Footer";
-import DetallesPersonajes from "./components/DetallesPersonajes"
+import DetallesPersonajes from "./components/DetallesPersonajes";
+import Main from "./components/Main"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <BrowserRouter>
     <Nav />
       <Routes>
+        <Route path="/" element={<Main />}></Route>
         <Route path="/personajes" element={<Personajes />} />
         <Route path="/episodios" element={<Episodios />} />
         <Route path="/ubicaciones" element={<Ubicaciones />} />

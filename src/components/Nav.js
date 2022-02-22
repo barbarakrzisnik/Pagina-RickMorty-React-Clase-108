@@ -4,8 +4,9 @@ const Nav = () => {
     return (
         <div>
             <nav>
-            <h1>Rick & Morty</h1>
+            <Link className="link" to="/"><h1>Rick & Morty</h1></Link>
             <ul>
+                <li><Link className="link" to="/">Home</Link></li>
                 <li><Link className="link" to="/Personajes">Characters</Link></li>
                 <li><Link className="link" to="/Episodios">Episodes</Link></li>
                 <li><Link className="link" to="/Ubicaciones">Location</Link></li>
